@@ -1,33 +1,33 @@
-1.generate package .js
+1. generate package .js
   -- using npm init -y
-2. create express server 
-  -- npm installer express
-3. install mongoose and connect to mongoDB server
+2. Create an Express server 
+  -- npm install express
+3. Install Mongoose and connect to the MongoDB server
       reest api - mongodb native driver->db server
-      rest-api - mongose odm tool->db server
-4.  build user rest api
+      rest-api - mongoose ODM tool->db server
+4.  Build a user rest api
      -- create user
      -- read all users
      -- update a user by id
      -- delete a user by id
-5. create schema and model of the rsource(user)
+5. Create a schema and model of the resource (user)
     
   tcpip and a
-  event loop --> continusly monitering wheter any loop is waitting or not 
-  stack and heep-> THEY ARE PRESENT IN JS ENGINE
-  js has only one thread
+  event loop --> continuously monitoring whether any loop is waiting or not 
+  stack and heap -> THEY ARE PRESENT IN JS ENGINE
+  JS has only one thread
   
   200--> any sucess (that can be any operation0 rud(represented with 200 its sucess excludinng c))
   201-->created 
-  (below all represent client error)
+  (Below all represent client error)
   400--> bad request
   401-->unatherised 
-  404-->server error (when i resorce is not found)
-  (below represents the server mistake)
+  404-->server error (when a resource is not found)
+  (The below represents the server's mistake)
   500--> mistake by server mistake 
-  1100-->when index error accer
+  1100-->when index error occurs
   ### user authentication
-     --> submit cridiencials and get log in 
+     --> submit credentials and get logged in 
      -->req --->  public routes (by anyone )
      req---> middleware--> protected routes(by authenticaated useres only)
 
