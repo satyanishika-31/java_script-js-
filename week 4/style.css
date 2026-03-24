@@ -1,0 +1,127 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+   
+
+}
+
+body{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(255, 235, 205, 0.651);
+    align-items: center;
+    padding:20px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+}
+.main{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+div main{
+    display: flex;
+    flex-wrap: wrap;
+    width: min(100%, 1100px);
+    margin: 10px auto;
+    gap: 16px;
+}
+main section{
+    flex: 1 1 240px;
+    padding: 30px;
+    transition: transform 0.6s ease,background-color 0.6s ease;
+}
+main section:hover{
+    transform: scale(1.08);
+    background-color: #9d9a9447;
+}
+main section img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+h1{
+    padding:10px;
+    text-align: center;
+      font-size: clamp(2rem , 3vw,5rem);
+
+}
+h3{
+    text-align: center;
+      font-size: clamp(2rem , 3vw,5rem);
+      color: rgb(169, 131, 81);
+}
+input {
+    background-color:rgba(169, 169, 169, 0.263);
+}
+
+button{
+    margin-top: 5px;
+    padding: 5px;
+    background-color:#e9dccb65;
+    border-radius: 10px;
+}
+footer  {
+    background-color: rgba(0, 0, 0, 0.518);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 10px;
+    
+    
+
+}
+
+
+@media (max-width: 900px){/* media*/
+    nav{
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section{
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media (max-width: 600px){
+    nav ul{
+        width: 100%;
+    }
+
+    form,
+    form input{
+        width: 100%;
+    }
+
+    section{
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    section:hover{
+        transform: none;
+    }
+
+    h1{
+        font-size: clamp(1.4rem, 7vw, 2.2rem);
+    }
+
+    h3{
+        font-size: clamp(1.1rem, 5vw, 1.6rem);
+    }
+    footer{
+        flex-direction: column;
+    }
+}
